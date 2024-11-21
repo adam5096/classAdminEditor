@@ -1,0 +1,20 @@
+@layer components {
+  .link {
+    @apply text-violet-600 hover:text-violet-500 transition-colors;
+  }
+  .btn {
+    @apply inline-flex justify-center items-center;
+    @apply py-2 px-6 border border-transparent;
+    @apply text-sm font-medium tracking-wider;
+    @apply rounded-lg transition-colors;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply disabled:cursor-default;
+  }
+
+  .btn-base {
+    @apply py-2 px-6 rounded-lg;
+  }
+  .btn-sm {
+    @apply py-1 px-4 rounded;
+  }
+}

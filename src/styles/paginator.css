@@ -1,0 +1,29 @@
+.paginator {
+  /* 分頁器最外層 */
+  .Pagination {
+    @apply justify-end !important;
+  }
+
+  /*  */
+  .Page {
+    @apply w-8 h-8 border-0 rounded-md transition-colors duration-100 !important;
+    &:not(.Page-active) {
+      @apply hover:text-violet-600 hover:bg-violet-200 !important;
+    }
+  }
+
+  /* 當前頁 */
+  .Page-active {
+    @apply bg-violet-600 text-white !important;
+  }
+
+  /* 下一頁按鈕處在停用 css 狀態 => 當前頁是第1頁或最末頁 */
+  .Control {
+    @apply w-5 h-5 rounded transition-colors duration-100 !important;
+  }
+
+  /* 下一頁按鈕處在可點選 css 狀態  => 當前頁非首頁或末頁 (即第2頁 ~ 第n-1頁) */
+  .Control-active {
+    @apply hover:fill-current hover:text-violet-600 hover:bg-violet-200;
+  }
+}

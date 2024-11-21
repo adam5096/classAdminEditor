@@ -1,0 +1,18 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* 此檔案作為所有樣式的主要入口, 僅能出現其他 css 檔案的匯入語法, 不在此直接書寫樣式 */
+
+/* Tailwind CSS 提供的預設樣式 utilities */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* 本專案根據設計規劃而拆分的其他 css 檔案來源 */
+@import "base";
+@import "components";
+@import "form";
+@import "notifications";
+@import "paginator";
+@import "tags";
