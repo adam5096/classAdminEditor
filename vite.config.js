@@ -40,7 +40,26 @@ export default defineConfig({
     }),
     // icons 相關功能
     Icons({ /* options */ }),
-  ]
+  ],
+  // vite 優化依賴 & 預編譯
+  optimizeDeps: {
+    include: [
+      "vue",
+      "vue-router",
+      "@headlessui/vue",
+      "@hennge/vue3-pagination",
+      "@kyvg/vue3-notification",
+      "@sipec/vue3-tags-input",
+      "@tiptap/extension-image",
+      "@tiptap/extension-link",
+      "@tiptap/starter-kit",
+      "@tiptap/vue-3",
+      "@vueuse/core",
+      "chart.js",
+      "mitt",
+      "prettier",
+      ],
+  },
   // 開發當中, npm run dev 開啟專案時所佔用的 port number
   // server: {
   //   port: 3000,

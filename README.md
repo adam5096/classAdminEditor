@@ -1691,8 +1691,41 @@ Use the order-* utilities to render flex and grid items in a different order tha
     ]
 ```
 
-## 單元 3 - 優化 Vite 依賴&預編譯
+## 單元 3 - 優化 Vite 依賴 & 預編譯
+
+**Dependency Pre-Bundling**  
+When you run vite for the first time, Vite prebundles your project dependencies before loading your site locally. It is done automatically and transparently by default.
+
+<https://vite.dev/guide/dep-pre-bundling.html>
+
+**Customizing the Behavior**  
+The default dependency discovery heuristics may not always be desirable. In cases where you want to explicitly include/exclude dependencies from the list, use the optimizeDeps config options.
+
+<https://vite.dev/guide/dep-pre-bundling.html#customizing-the-behavior>
+
+
+**Caching**  
+File System Cache  
+<https://vite.dev/guide/dep-pre-bundling.html#caching>
+
+
+**優化vite 依賴 & 編譯流程**
+**optimizeDeps.include**
+<https://vite.dev/config/dep-optimization-options.html#optimizedeps-include>
+
 ## 單元 4 - 課程總結
+
+Ant Design of Vue  
+<https://ant.design/>
+
+ElementPLus  
+<https://element-plus.org/zh-CN/>
+
+Tailwind Components  
+<https://www.creative-tim.com/twcomponents/>
+
+awesome-tailwindcss  
+<https://github.com/aniftyco/awesome-tailwindcss>
 
 # 第10章 [彩蛋章節] 簡易部落格前台
 <!--  -->
@@ -1739,9 +1772,6 @@ mitt()
 多次拆分vue元件&第三方插件再封裝
 
 <hr>
-
-<hr>
-
 
 # 師生QA
 
