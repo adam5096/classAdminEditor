@@ -1671,6 +1671,26 @@ Use the order-* utilities to render flex and grid items in a different order tha
 <https://lucas-hiskio-2021-tailwindcss-slide.vercel.app/tailwindcss-12-tips/1>
 
 ## 單元 2 - 部屬專案到 Vercel
+
+**Vercel**  
+<https://vercel.com/>
+
+<hr>
+
+**一些調整: 從 vercel 部署平台瀏覽專案, 調整找不到路徑等問題**
+
+**vercel.json**  
+<https://vercel.com/docs/projects/project-configuration#legacy-spa-fallback>
+
+```json
+"rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+```
+
 ## 單元 3 - 優化 Vite 依賴&預編譯
 ## 單元 4 - 課程總結
 
